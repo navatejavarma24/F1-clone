@@ -1654,3 +1654,7 @@ body.light-theme .plan-card.active-plan {
     background: rgba(241, 92, 34, 0.05);
     border-color: var(--primary);
 }
+footer{
+    text-align:center;
+    font-size:4px;
+}
