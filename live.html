@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+        .live-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        .pause-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            border: 2px solid white;
+            transition: transform 0.2s;
+        }
+        .pause-icon:hover {
+            transform: scale(1.1);
+        }
+        .pause-bars {
+            display: flex;
+            gap: 10px;
+        }
+        .pause-bar {
+            width: 10px;
+            height: 35px;
+            background-color: white;
+            border-radius: 2px;
+        }
+        .back-btn {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+        .back-btn:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    <div class="live-container">
+        <div class="pause-icon">
+            <div class="pause-bars">
+                <div class="pause-bar"></div>
+                <div class="pause-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

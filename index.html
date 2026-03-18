@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF&#45;8">
+    <meta name="viewport" content="width=device&#45;width, initial&#45;scale=1.0">
+    <title>Live Formula 1 Streaming in India &#45; Races, Results & Highlights | FanCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav&#45;left">
+            <a href="/" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" alt="F1">
+            </a>
+            <div class="nav&#45;links">
+                <a href="index.html" id="home-link">Home</a>
+                <a href="#" id="schedule&#45;link">Schedule</a>
+                <a href="drivers.html" id="all-time-10-link">All Time 10</a>
+                <a href="standings.html" id="standings-link">Current Standings</a>
+                <a href="live.html" id="live-link">Live</a>
+
+            </div>
+        </div>
+        <div class="nav&#45;right">
+            <button class="theme&#45;toggle" id="theme&#45;toggle" aria&#45;label="Toggle Theme">
+                <svg class="sun&#45;icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke&#45;width="2" stroke&#45;linecap="round" stroke&#45;linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon&#45;icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke&#45;width="2" stroke&#45;linecap="round" stroke&#45;linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button class="header&#45;btn" id="offers&#45;btn">Offers</button>
+            <button class="header&#45;btn" id="profile&#45;btn">Login / Sign Up</button>
+        </div>
+    </header>
+
+    <div class="main&#45;content">
+        <div class="top&#45;background&#45;layer"></div>
+
+        <section class="hero&#45;carousel">
+            <div class="carousel&#45;track">
+                <div class="carousel&#45;slide active">
+                    <img class="slide&#45;bg"
+                        src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/China_GP_match_card_&#45;WebTVBG&#45;(1).jpg"
+                        alt="China GP">
+                    <div class="carousel&#45;overlay"></div>
+                    <div class="carousel&#45;content">
+                        <span class="slide&#45;badge">UPCOMING</span>
+                        <h2 class="slide&#45;title">China GP &#45; Practice 1 <span class="title&#45;chevron">></span></h2>
+                        <p class="slide&#45;info">F1 HEINEKEN CHINESE GRAND PRIX 2026 &bull; Tomorrow, 9:00 am</p>
+                        <div class="slide&#45;actions">
+                            <button class="btn&#45;primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11&#45;7z" />
+                                </svg>
+                                VIEW DETAILS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel&#45;slide">
+                    <img class="slide&#45;bg"
+                        src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/China_GP_Practice_match_card_&#45;WebTVBG.jpg"
+                        alt="China GP Practice">
+                    <div class="carousel&#45;overlay"></div>
+                    <div class="carousel&#45;content">
+                        <span class="slide&#45;badge highlight&#45;badge">LIVE</span>
+                        <h2 class="slide&#45;title">F1 Live Coverage <span class="title&#45;chevron">></span></h2>
+                        <p class="slide&#45;info">F1 HEINEKEN CHINESE GRAND PRIX 2026 &bull; Shanghai International Circuit
+                        </p>
+                        <div class="slide&#45;actions">
+                            <button class="btn&#45;primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11&#45;7z" />
+                                </svg>
+                                WATCH LIVE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel&#45;slide">
+                    <img class="slide&#45;bg"
+                        src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/FC_Sports_Default_F1&#45;racing_BG.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL0ZDX1Nwb3J0c19EZWZhdWx0X0YxLXJhY2luZ19CRy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6Mzg0MCwiaGVpZ2h0IjoyMTYwfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+                        alt="China GP Destination Edit">
+                    <div class="carousel&#45;overlay"></div>
+                    <div class="carousel&#45;content">
+                        <span class="slide&#45;badge preview&#45;badge">PREVIEW</span>
+                        <h2 class="slide&#45;title">Chinese GP 2026: Live on FanCode! <span class="title&#45;chevron">></span>
+                        </h2>
+                        <p class="slide&#45;info">Formula 1 2026 &bull; 00:30</p>
+                        <div class="slide&#45;actions">
+                            <button class="btn&#45;primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11&#45;7z" />
+                                </svg>
+                                WATCH NOW
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel&#45;controls">
+                <button class="carousel&#45;btn prev&#45;btn">&lt;</button>
+                <div class="carousel&#45;indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+                <button class="carousel&#45;btn next&#45;btn">&gt;</button>
+            </div>
+
+            <div class="scroll&#45;indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="chevron"></div>
+            </div>
+        </section>
+
+        <section class="popular&#45;tours">
+            <div class="tours&#45;track">
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/F1_China_GP_TVVertical.png"
+                            alt="China GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://dyler.com/shop/app/uploads/2024/04/F1_2024_04_Japan_ProductImages_Main_1500px.webp"
+                            alt="Japan GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://images.footballfanatics.com/formula&#45;1&#45;merchandise/formula&#45;1&#45;bahrain&#45;grand&#45;prix&#45;2024&#45;poster_ss5_p&#45;201348077+pv&#45;1+u&#45;v48ciqjppqwtzj3bi0bp+v&#45;vamh99unffvr8iyl7jjh.jpg?_hv=2&w=1018"
+                            alt="Bahrain GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://images.footballfanatics.com/formula&#45;1&#45;merchandise/formula&#45;1&#45;saudi&#45;arabia&#45;grand&#45;prix&#45;2024&#45;poster_ss5_p&#45;201493300+pv&#45;1+u&#45;vpsrqon3hdfrreova3my+v&#45;il1ubmtekbdh0axkp6g1.jpg?_hv=2&w=1018"
+                            alt="Saudi Arabian GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://i.pinimg.com/564x/93/68/3f/93683f9f5c479d044c2c74d80531e254.jpg"
+                            alt="Miami GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://images.squarespace&#45;cdn.com/content/v1/52744b67e4b0782c048b666f/1749812516080&#45;H0ZJN47USOXQF6DVDXD7/1+Haas+Canadian+GP+poster+1.jpg?format=750w"
+                            alt="Canada GP">
+                    </div>
+                </div>
+                <div class="tour&#45;card">
+                    <div class="tour&#45;image&#45;container">
+                        <img src="https://preview.redd.it/official&#45;2023&#45;monaco&#45;grand&#45;prix&#45;poster&#45;1080x1620&#45;v0&#45;4e65upnjug2b1.jpg?auto=webp&s=72ae45b60e3a665d8494ceac1ba7f1ba4d41a7c2"
+                            alt="Monaco GP">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content&#45;section">
+            <div class="section&#45;header">
+                <h2>Formula 1 2026</h2>
+            </div>
+            <div class="video&#45;rail">
+                <div class="video&#45;card">
+                    <div class="thumbnail&#45;wrapper">
+                        <img src="https://img.etimg.com/thumb/msid&#45;129588495,width&#45;300,height&#45;225,imgsize&#45;24920,resizemode&#45;75/f1&#45;chinese&#45;grand&#45;prix&#45;max&#45;verstappen&#45;forced&#45;to&#45;retire&#45;after&#45;car&#45;failure&#45;red&#45;bull&#45;explains&#45;what&#45;went&#45;wrong.jpg" alt="Video">
+                        <div class="overlay">
+                            <span class="badge preview&#45;badge">PREVIEW</span>
+                            <div class="bottom&#45;info">
+                                <div class="play&#45;icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                                        <path d="M8 5v14l11&#45;7z" />
+                                    </svg>
+                                </div>
+                                <span class="duration">00:45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video&#45;title">Verstappen didn&#39;t crash â€” it was purely a technical failure</h3>
+                </div>
+                <div class="video&#45;card">
+                    <div class="thumbnail&#45;wrapper">
+                        <img src="https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000001/fom&#45;website/2026/China/GettyImages&#45;2266170762.webp" alt="Video">
+                        <div class="overlay">
+                            <span class="badge preview&#45;badge">PREVIEW</span>
+                            <div class="bottom&#45;info">
+                                <div class="play&#45;icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                                        <path d="M8 5v14l11&#45;7z" />
+                                    </svg>
+                                </div>
+                                <span class="duration">00:30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video&#45;title">Hamilton overjoyed to share China podium with Antonelli, Bonnington and Russell</h3>
+                </div>
+                <div class="video&#45;card">
+                    <div class="thumbnail&#45;wrapper">
+                        <img src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/PostRacePCAusF1.jpg" alt="Video">
+                        <div class="overlay">
+                            <span class="badge presser&#45;badge">PRESSER</span>
+                            <div class="bottom&#45;info">
+                                <div class="play&#45;icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                                        <path d="M8 5v14l11&#45;7z" />
+                                    </svg>
+                                </div>
+                                <span class="duration">14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video&#45;title">Australian GP 2026: Post race driver's press conference</h3>
+                </div>
+                <div class="video&#45;card">
+                    <div class="thumbnail&#45;wrapper">
+                        <img src="https://images.fancode.com/skillup&#45;uploads/cms&#45;media/Screenshot&#45;2026&#45;03&#45;08&#45;153426.png"
+                            alt="Video">
+                        <div class="overlay">
+                            <span class="badge highlight&#45;badge">TOP MOMENT</span>
+                            <div class="bottom&#45;info">
+                                <div class="play&#45;icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                                        <path d="M8 5v14l11&#45;7z" />
+                                    </svg>
+                                </div>
+                                <span class="duration">01:12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video&#45;title">CRUEL TWIST! Heartbreak for home hero Piastri at Albert Park</h3>
+                </div>
+                <div class="video&#45;card">
+                    <div class="thumbnail&#45;wrapper">
+                        <img src="data:image/jpeg;base64,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" alt="Video">
+                        <div class="overlay">
+                            <span class="badge highlight&#45;badge">HIGHLIGHTS</span>
+                            <div class="bottom&#45;info">
+                                <div class="play&#45;icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                                        <path d="M8 5v14l11&#45;7z" />
+                                    </svg>
+                                </div>
+                                <span class="duration">01:39</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video&#45;title">Race high&#45;speed highlights | Australian GP 2026</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="schedule&#45;modal" class="modal&#45;overlay">
+        <div class="modal&#45;container schedule&#45;container">
+            <button class="modal&#45;close" id="close&#45;schedule">&times;</button>
+            <div class="schedule&#45;image&#45;wrapper">
+                <img src="https://i.redd.it/de7dvze8m6pg1.png" alt="F1 2026 Schedule" class="schedule&#45;img">
+            </div>
+        </div>
+    </div>
+
+        <div id="payment-modal" class="modal-overlay">
+        <div class="modal-container payment-container" style="max-width: 800px;">
+            <button class="modal-close" id="close-payment">&times;</button>
+            <div class="modal-left payment-left" style="flex: 1.2; padding: 40px; display: flex; flex-direction: column; gap: 20px;">
+                <h2 style="margin-bottom: 0;">Premium Pass</h2>
+                <p style="margin-top: 0; margin-bottom: 10px;">Select a subscription plan</p>
+                
+                <div class="subscription-plans">
+                    <div class="plan-card" data-price="99">
+                        <div class="plan-name">Weekly</div>
+                        <div class="plan-price">₹99</div>
+                        <div class="plan-desc">7 days access</div>
+                    </div>
+                    <div class="plan-card active-plan" data-price="199">
+                        <div class="plan-name">Monthly</div>
+                        <div class="plan-price">₹199</div>
+                        <div class="plan-desc">30 days access</div>
+                    </div>
+                    <div class="plan-card" data-price="1499">
+                        <div class="plan-name">Yearly</div>
+                        <div class="plan-price">₹1499</div>
+                        <div class="plan-desc">365 days access</div>
+                    </div>
+                </div>
+                
+                <ul class="perk-list" style="margin-top: auto;">
+                    <li>✓ 1080p Live Streaming</li>
+                    <li>✓ Multi-cam Angles</li>
+                    <li>✓ Live Driver Tracker</li>
+                    <li>✓ Ad-free experience</li>
+                </ul>
+            </div>
+            <div class="modal-right" style="flex: 1;">
+                <form id="payment-form" class="auth-form active-form">
+                    <h3>Payment Details</h3>
+                    <div class="input-group">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="card-num">Card Number</label>
+                        <input type="text" id="card-num" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                    </div>
+                    <div class="payment-row">
+                        <div class="input-group half">
+                            <label for="card-exp">Expiry (MM/YY)</label>
+                            <input type="text" id="card-exp" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="input-group half">
+                            <label for="card-cvv">CVV</label>
+                            <input type="password" id="card-cvv" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-auth" id="pay-btn">Pay ₹199</button>
+                    <p class="secure-checkout">🔒 Secure 256-bit Encryption</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="auth&#45;modal" class="modal&#45;overlay">
+        <div class="modal&#45;container">
+            <button class="modal&#45;close">&times;</button>
+            <div class="modal&#45;left">
+                <img src="https://images.fancode.com/skillup&#45;uploads/fc&#45;web&#45;logo/fc_logo_white_bg.svg" alt="FanCode">
+                <h2>Welcome to<br>FanCode Formula 1</h2>
+                <p>Sign in to follow your favorite races, save your preferences, and never miss a live moment.</p>
+            </div>
+            <div class="modal&#45;right">
+                <form id="login&#45;form" class="auth&#45;form active&#45;form">
+                    <h3>Login</h3>
+                    <div class="input&#45;group">
+                        <label for="login&#45;email">Email or Mobile Number</label>
+                        <input type="text" id="login&#45;email" placeholder="Enter email or mobile" required>
+                        <span class="error&#45;msg" id="login&#45;email&#45;error"></span>
+                    </div>
+                    <div class="input&#45;group">
+                        <label for="login&#45;password">Password</label>
+                        <input type="password" id="login&#45;password" placeholder="Enter password" required>
+                        <span class="error&#45;msg" id="login&#45;password&#45;error"></span>
+                    </div>
+                    <div class="form&#45;options">
+                        <label class="remember&#45;me">
+                            <input type="checkbox" checked> Remember me
+                        </label>
+                        <a href="#" class="forgot&#45;pwd">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn&#45;auth">Login</button>
+                    <p class="toggle&#45;auth">Don't have an account? <span id="show&#45;signup">Sign up here</span></p>
+                </form>
+
+                <form id="signup&#45;form" class="auth&#45;form">
+                    <h3>Create Account</h3>
+                    <div class="input&#45;group">
+                        <label for="signup&#45;name">Full Name</label>
+                        <input type="text" id="signup&#45;name" placeholder="Enter full name" required>
+                    </div>
+                    <div class="input&#45;group">
+                        <label for="signup&#45;email">Email Address</label>
+                        <input type="email" id="signup&#45;email" placeholder="Enter email address" required>
+                        <span class="error&#45;msg" id="signup&#45;email&#45;error"></span>
+                    </div>
+                    <div class="input&#45;group">
+                        <label for="signup&#45;password">Create Password</label>
+                        <input type="password" id="signup&#45;password" placeholder="Create a strong password" required>
+                    </div>
+                    <button type="submit" class="btn&#45;auth">Sign Up</button>
+                    <p class="toggle&#45;auth">Already have an account? <span id="show&#45;login">Login here</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

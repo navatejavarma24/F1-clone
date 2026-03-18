@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Current Standings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .standings-container {
+            padding: 100px 40px;
+            color: white;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .standings-section {
+            flex: 1;
+            min-width: 300px;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .standings-section h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-left">
+            <a href="/" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" alt="F1">
+            </a>
+            <div class="nav-links">
+                <a href="/" id="home-link">Home</a>
+                <a href="index.html" id="schedule-link">Schedule</a>
+                <a href="drivers.html" id="all-time-10-link">All Time 10</a>
+                <a href="standings.html" id="standings-link">Current Standings</a>
+                <a href="live.html" id="live-link">Live</a>
+
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="header-btn" id="offers-btn">Offers</button>
+            <button class="header-btn" id="profile-btn">Login / Sign Up</button>
+        </div>
+    </header>
+
+    <div class="standings-container">
+        <div class="standings-section">
+            <h2>2026 Drivers' Championship</h2>
+            <table class="f1-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Driver</th>
+                        <th>Team</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>125</td></tr>
+                    <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>110</td></tr>
+                    <tr><td>3</td><td>Lando Norris</td><td>McLaren</td><td>95</td></tr>
+                    <tr><td>4</td><td>Carlos Sainz</td><td>Ferrari</td><td>85</td></tr>
+                    <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>70</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="standings-section">
+            <h2>2026 Constructors' Championship</h2>
+            <table class="f1-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Team</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Ferrari</td><td>265</td></tr>
+                    <tr><td>2</td><td>Red Bull Racing</td><td>210</td></tr>
+                    <tr><td>3</td><td>McLaren</td><td>185</td></tr>
+                    <tr><td>4</td><td>Mercedes</td><td>120</td></tr>
+                    <tr><td>5</td><td>Aston Martin</td><td>90</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
